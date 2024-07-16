@@ -9,14 +9,15 @@ function HomeScreen() {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getCategoriesRequest());
-        dispatch(getProductRequest());
+        (async () => {
+           await dispatch(getCategoriesRequest())
+           await dispatch(getProductRequest())
+        })()
     }, []);
 
     const categoriesSelector = useSelector((state) => state.getCategoriesReducer.categories || []);
     const productsSelector = useSelector((state) => state.getProductReducer.products || []);
 
-    console.log(productsSelector, 22222222222222222222222)
     return (
         <View style={styles.container}>
             <View>
@@ -45,7 +46,7 @@ function HomeScreen() {
             <View style={styles.fillter}>
                 <ScrollView horizontal={true}>
                     {categoriesSelector.map(el => (
-                        <View style={styles.elements} id={el.key}>
+                        <View style={styles.elements} key={el.id}>
                             <Text style={styles.text2}>{el.name}</Text>
                         </View>
                     ))
@@ -53,11 +54,16 @@ function HomeScreen() {
                 </ScrollView>
             </View>
 
-            <View style={styles.cartParent}>
-                {productsSelector.map(item => (
-                    <ProductCart data={item}/>
-                ))}
-            </View>
+
+            <ScrollView style={{maxHeight: 295}}>
+                <View style={styles.cartParent}>
+                    <View style={{flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
+                        {productsSelector.products?.map(item => (
+                            <ProductCart data={item} images={item.images[0]} key={item.id}/>
+                        ))}
+                    </View>
+                </View>
+            </ScrollView>
 
         </View>
     );
@@ -121,7 +127,7 @@ const styles = StyleSheet.create({
     },
     cartParent: {
         width: "100%",
-        paddingTop: 41
+        paddingTop: 41,
     }
 });
 
