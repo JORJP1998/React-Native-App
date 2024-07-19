@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Cheeseburger",
+      "description": "Juicy beef patty topped with melted cheddar cheese, lettuce, tomato, and pickles.",
+      "price": 9.99,
+      "rating": 4.5,
+      "image": "https://img.freepik.com/premium-photo/classic-cheeseburger-with-beef-cheese-bacon-tomato-onion-lettuce-isolated-white-background_183587-963.jpg"
+    },
+    {
+      "id": 2,
+      "name": "BBQ Bacon Burger",
+      "description": "Grilled beef patty with crispy bacon, cheddar cheese, BBQ sauce, lettuce, and onion rings.",
+      "price": 11.49,
+      "rating": 4.5,
+      "image": "https://thumbs.dreamstime.com/b/bbq-bacon-burger-hamburger-food-product-mockup-isolated-white-background-generative-ai-bbq-bacon-burger-delicious-269915286.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Mushroom Swiss Burger",
+      "description": "Beef patty topped with sautéed mushrooms, Swiss cheese, lettuce, and garlic aioli.",
+      "price": 10.99,
+      "rating": 4.5,
+      "image": "https://static.vecteezy.com/system/resources/previews/027/145/447/original/delicious-mushroom-swiss-burger-isolated-on-transparent-background-png.png"
+    },
+    {
+      "id": 4,
+      "name": "Veggie Burger",
+      "description": "Plant-based patty with lettuce, tomato, red onion, avocado, and vegan mayo.",
+      "price": 8.99,
+      "rating": 4.5,
+      "image": "https://img.taste.com.au/R6X05Gvx/taste/2020/01/maccas-burger-157445-1.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Double Bacon Cheeseburger",
+      "description": "Two beef patties layered with crispy bacon, American cheese, lettuce, and special sauce.",
+      "price": 12.99,
+      "rating": 4.5,
+      "image": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F05%2Fwendys-bourbon-bacon-cheeseburger-launch-national-hamburger-month-000.jpg?w=960&cbr=1&q=90&fit=max"
+    },
+    {
+      "id": 6,
+      "name": "Spicy Jalapeño Burger",
+      "description": "Beef patty with pepper jack cheese, jalapeños, chipotle mayo, lettuce, and tomato.",
+      "price": 10.49,
+      "rating": 4.5,
+      "image": "https://static.vecteezy.com/system/resources/previews/027/145/412/non_2x/delicious-jalapeno-burger-isolated-on-transparent-background-png.png"
+    },
+    {
+      "id": 7,
+      "name": "Turkey Burger",
+      "description": "Grilled turkey patty topped with Swiss cheese, lettuce, tomato, and cranberry mayo.",
+      "price": 9.49,
+      "rating": 4.5,
+      "image": "https://t4.ftcdn.net/jpg/03/21/32/45/240_F_321324549_3utrdpZOFdsyUElymaPhm5LXRyTpnteh.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Avocado Ranch Burger",
+      "description": "Beef patty with avocado slices, ranch dressing, lettuce, tomato, and crispy onions.",
+      "price": 11.99,
+      "rating": 4.5,
+      "image": "https://img.freepik.com/premium-photo/fresh-tasty-avocado-ranch-burger-isolated-white-background_787273-31849.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Black Bean Burger",
+      "description": "Black bean patty with pepper jack cheese, lettuce, tomato, and chipotle aioli.",
+      "price": 9.99,
+      "rating": 4.5,
+      "image": "https://actualveggies.com/cdn/shop/products/ActualVeggies_Packaging7633_2048x.jpg?v=1713819419"
+    },
+    {
+      "id": 10,
+      "name": "Bacon Avocado Burger",
+      "description": "Beef patty with crispy bacon, avocado slices, lettuce, tomato, and garlic aioli.",
+      "price": 11.49,
+      "rating": 4.5,
+      "image": "https://content.presspage.com/uploads/1924/1920_wat-19346-q2-abgcc-seamless-6889-v3-approved.jpg?10000"
+    },
+    {
+      "id": 11,
+      "name": "Buffalo Chicken Burger",
+      "description": "Grilled chicken breast with buffalo sauce, blue cheese dressing, lettuce, and tomato.",
+      "price": 10.99,
+      "rating": 4.5,
+      "image": "https://media.istockphoto.com/id/1386453527/photo/buffalo-chicken-burger-isolated.jpg?s=612x612&w=0&k=20&c=MaSFAUfS1CbCJSksecqqODQpWx-93rwl6mApLdFarLE="
+    },
+    {
+      "id": 12,
+      "name": "Portabello Mushroom Burger",
+      "description": "Grilled portabello mushroom cap with Swiss cheese, roasted red peppers, lettuce, and basil pesto.",
+      "price": 10.49,
+      "rating": 4.5,
+      "image": "https://images.fineartamerica.com/images-medium-large-5/portobello-mushroom-burger-lew-robertson.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Hawaiian Teriyaki Burger",
+      "description": "Grilled beef patty with teriyaki glaze, grilled pineapple, Swiss cheese, lettuce, and mayo.",
+      "price": 11.99,
+      "rating": 4.5,
+      "image": "https://img.freepik.com/photos-premium/hamburger-ananas-ananas-dessus_900321-27476.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Fried Chicken Burger",
+      "description": "Crispy fried chicken breast with lettuce, tomato, pickles, and honey mustard.",
+      "price": 9.99,
+      "rating": 4.5,
+      "image": "https://media.istockphoto.com/id/1273265655/photo/burger-with-fried-chicken-meat-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=iwDZMUYie0zldQBJY6vXjidTqw6rNKrSEnSPszXpJCI="
+    },
+    {
+      "id": 15,
+      "name": "Caresse Burger",
+      "description": "Beef patty topped with fresh mozzarella, sliced tomatoes, basil leaves, and balsamic glaze.",
+      "price": 10.49,
+      "rating": 4.5,
+      "image": "https://media.istockphoto.com/id/520410807/photo/cheeseburger.jpg?s=612x612&w=0&k=20&c=fG_OrCzR5HkJGI8RXBk76NwxxTasMb1qpTVlEM0oyg4="
+    }
+  ]
+}

@@ -14,6 +14,7 @@ import com.facebook.soloader.SoLoader
 
 import expo.modules.ApplicationLifecycleDispatcher
 import expo.modules.ReactNativeHostWrapper
+import com.oblador.vectoricons.VectorIconsPackage;
 
 class MainApplication : Application(), ReactApplication {
 

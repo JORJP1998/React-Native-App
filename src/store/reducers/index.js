@@ -1,7 +1,6 @@
-import {getCategoriesReducer, getProductReducer} from './product'
-const reducer = {
-    getCategoriesReducer,
-    getProductReducer
-}
-
-export default reducer
+// import {} from './product'
+// const reducer = {
+//
+// }
+//
+// export default reducer

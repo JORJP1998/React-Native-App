@@ -1,23 +1,12 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import {Image, StyleSheet, Text, View, ScrollView} from "react-native";
 import Shearch from "../Component/Shearch";
-import {useDispatch, useSelector} from "react-redux";
-import {getCategoriesRequest, getProductRequest} from "../store/actions/product";
+import categories from "../data/categories.json"
+import Product from "../data/products.json"
 import ProductCart from "../Component/ProductCart";
-
 function HomeScreen() {
-    const dispatch = useDispatch();
 
-    useEffect(() => {
-        (async () => {
-           await dispatch(getCategoriesRequest())
-           await dispatch(getProductRequest())
-        })()
-    }, []);
-
-    const categoriesSelector = useSelector((state) => state.getCategoriesReducer.categories || []);
-    const productsSelector = useSelector((state) => state.getProductReducer.products || []);
-
+    console.log(Product)
     return (
         <View style={styles.container}>
             <View>
@@ -45,12 +34,11 @@ function HomeScreen() {
 
             <View style={styles.fillter}>
                 <ScrollView horizontal={true}>
-                    {categoriesSelector.map(el => (
+                    {categories.map(el => (
                         <View style={styles.elements} key={el.id}>
                             <Text style={styles.text2}>{el.name}</Text>
                         </View>
-                    ))
-                    }
+                    ))}
                 </ScrollView>
             </View>
 
@@ -58,8 +46,8 @@ function HomeScreen() {
             <ScrollView style={{maxHeight: 295}}>
                 <View style={styles.cartParent}>
                     <View style={{flexDirection: "row", justifyContent: "space-between", flexWrap: "wrap"}}>
-                        {productsSelector.products?.map(item => (
-                            <ProductCart data={item} images={item.images[0]} key={item.id}/>
+                        {Product.products?.map(item => (
+                            <ProductCart data={item} images={item.image} key={item.id}/>
                         ))}
                     </View>
                 </View>
@@ -104,7 +92,7 @@ const styles = StyleSheet.create({
         paddingTop: 41
     },
     elements: {
-        width: "4%",
+        width: "8%",
         height: 50,
         borderRadius: 20,
         backgroundColor: "rgb(239, 42, 57)",
